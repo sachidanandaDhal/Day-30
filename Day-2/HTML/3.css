@@ -1,0 +1,135 @@
+/* === Global Reset === */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* === Variables === */
+  :root {
+    --primary-color: #1f76e9;
+    --secondary-color: #c40d0d;
+    --header-bg: linear-gradient(to right, #e624d5, #1877db);
+  }
+  
+  /* === Body and Global Styles === */
+  body {
+    font-family: 'Arial', sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* === Header Styles === */
+  #main-header {
+    background: var(--header-bg);
+    color: rgb(248, 236, 236);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #29cc8e;
+  }
+  
+  #main-header h1 {
+    font-size: 2.5em;
+  }
+  
+  #main-header .tagline {
+    font-style: italic;
+  }
+  
+  /* === Navigation Menu === */
+  .menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    background-color: #333;
+  }
+  
+  .menu li {
+    margin: 0;
+  }
+  
+  .menu li a {
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu li a.active {
+    background-color: var(--primary-color);
+  }
+  
+  .menu li a:hover {
+    background-color: #111111;
+  }
+  
+  /* Exclude active link from hover */
+  .menu li a:not(.active):hover {
+    color: var(--primary-color);
+  }
+  
+  /* === Section and Articles === */
+  section {
+    padding: 20px;
+  }
+  
+  section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  article.post {
+    border: 1px solid #1f1d1d;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  article.featured {
+    border: 2px solid var(--primary-color);
+  }
+  
+  /* Style post titles */
+  article.post h3 {
+    color: darkgreen;
+    margin-bottom: 10px;
+  }
+  
+  article.post h3::after {
+    content: " 📝";
+    font-size: 0.9em;
+    color: rgb(224, 34, 34);
+  }
+  
+  /* Highlight the first article */
+  article.post:nth-child(1) {
+    background-color: #eef;
+  }
+  
+  /* === Footer === */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+  
+  /* === Responsive Design === */
+  @media (max-width: 600px) {
+    .menu {
+      flex-direction: column;
+    }
+  
+    .menu li {
+      margin-bottom: 10px;
+    }
+  
+    #main-header {
+      text-align: center;
+      padding: 30px;
+    }
+  }
+  

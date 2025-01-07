@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HTML Tables, Iframes, and Multimedia</title>
+</head>
+
+<body>
+    <nav class="bg-gray-800 text-white">
+        <div class="container mx-auto flex items-center justify-between  p-4">
+            <h1>Day-2</h1>
+            <h1>Flex and Grid</h1>
+        </div>
+
+    </nav>
+    <section class="bg-gray-100 p-5">
+        <p>Basic Flexbox Layout</p>
+        <div class="flex justify-between items-center bg-gray-200 p-4">
+            <div class="w-1/4 bg-blue-500 text-white p-4">Item 1</div>
+            <div class="w-1/4 bg-green-500 text-white p-4">Item 2</div>
+            <div class="w-1/4 bg-red-500 text-white p-4">Item 3</div>
+        </div>
+        <p> Flex Direction Example
+        <div class="flex flex-col gap-4 p-4">
+            <div class="bg-blue-500 text-white p-4">Item 1</div>
+            <div class="bg-green-500 text-white p-4">Item 2</div>
+            <div class="bg-red-500 text-white p-4">Item 3</div>
+          </div>
+          <p> Basic Grid Layout</p>
+          <div class="grid grid-cols-3 gap-4 p-4">
+            <div class="bg-blue-500 text-white p-4">Item 1</div>
+            <div class="bg-green-500 text-white p-4">Item 2</div>
+            <div class="bg-red-500 text-white p-4">Item 3</div>
+            <div class="bg-yellow-500 text-white p-4">Item 4</div>
+            <div class="bg-purple-500 text-white p-4">Item 5</div>
+            <div class="bg-pink-500 text-white p-4">Item 6</div>
+          </div>
+         <p> Grid with Column and Row Span</p>
+          <div class="grid grid-cols-4 gap-4 p-4">
+            <div class="col-span-2 bg-blue-500 text-white p-4">Item 1 (Spans 2 Columns)</div>
+            <div class="bg-green-500 text-white p-4">Item 2</div>
+            <div class="bg-red-500 text-white p-4">Item 3</div>
+            <div class="row-span-2 bg-yellow-500 text-white p-4">Item 4 (Spans 2 Rows)</div>
+            <div class="bg-purple-500 text-white p-4">Item 5</div>
+            <div class="bg-pink-500 text-white p-4">Item 6</div>
+          </div>
+          
+          <p>Grid Alignment Example</p>
+          <div class="grid grid-cols-3 place-items-center h-64 bg-gray-100">
+            <div class="bg-blue-500 text-white p-4">Centered</div>
+          </div>
+          
+
+         <h1> Usage of Flexbox vs Grid</h1>
+<p>Flexbox for One-Dimensional Layouts</p>
+
+<div class="flex justify-around items-center bg-gray-200 h-32 p-4">
+    <div class="bg-blue-500 text-white p-4">Item 1</div>
+    <div class="bg-green-500 text-white p-4">Item 2</div>
+    <div class="bg-red-500 text-white p-4">Item 3</div>
+  </div>
+  
+  <p>Grid for Two-Dimensional Layouts</p>
+  <div class="grid grid-cols-3 grid-rows-2 gap-4 p-4">
+    <div class="bg-blue-500 text-white p-4">Item 1</div>
+    <div class="bg-green-500 text-white p-4">Item 2</div>
+    <div class="bg-red-500 text-white p-4">Item 3</div>
+    <div class="bg-yellow-500 text-white p-4">Item 4</div>
+    <div class="bg-purple-500 text-white p-4">Item 5</div>
+    <div class="bg-pink-500 text-white p-4">Item 6</div>
+  </div>
+
+    </section>
+
+</body>
+
+</html>

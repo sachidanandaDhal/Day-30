@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, main, footer {
+      padding: 1em;
+      margin: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+    nav {
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1em;
+    }
+    main {
+      padding: 2em;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+    .btn {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 0.5em 1em;
+      text-align: center;
+      cursor: pointer;
+      display: inline-block;
+      margin: 1em 0;
+    }
+    .btn:focus {
+      outline: 2px dashed #fff;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with ARIA landmark role -->
+  <header role="banner">
+    <h1>Accessible Webpage Example</h1>
+    <p>Your guide to building accessible and semantic websites.</p>
+  </header>
+
+  <!-- Navigation with ARIA roles -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main content area -->
+  <main role="main">
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        We are committed to creating web experiences that are accessible to everyone, 
+        regardless of ability or device.
+      </p>
+      <img src="team.jpg" alt="Our team working on a project" width="600">
+      
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" aria-labelledby="services-title">
+      <h2 id="services-title">Our Services</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>Accessibility Audits</li>
+        <li>UX/UI Design</li>
+      </ul>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="contact">
+      <h2>Ready to Work with Us?</h2>
+      <button class="btn" aria-label="Get in touch with us">Contact Us</button>
+    </section>
+  </main>
+
+  <!-- Footer with ARIA landmark role -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 Accessible Web Design. All rights reserved.</p>
+    <a href="https://www.w3.org/WAI/" target="_blank">Learn more about web accessibility</a>
+  </footer>
+</body>
+</html>
+<!-- 
+Features of This Webpage
+Semantic Structure:
+
+Uses semantic tags (<header>, <nav>, <main>, <section>, <footer>) for clear document structure.
+ARIA roles like role="banner", role="main", and role="contentinfo ensure assistive technologies understand the structure.
+Accessible Navigation:
+
+Navigation uses role="navigation" and aria-label to define its purpose.
+Links are descriptive and easy to navigate.
+Alt Text for Images:
+
+Meaningful alt attributes are provided for images to describe their content.
+Keyboard Accessibility:
+
+Buttons and links can be focused using the keyboard, with a visible focus outline (outline in CSS).
+High Contrast:
+
+Text and background colors are chosen for sufficient contrast, improving readability.
+Responsive Design:
+
+Includes a meta viewport tag to ensure it looks good on all devices.
+ARIA Attributes:
+
+Uses attributes like aria-labelledby and aria-label to make components more accessible.
+
+ -->
+
